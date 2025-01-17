@@ -56,13 +56,18 @@ class LibraryItem:
     @property
     def item_id(self) -> int:
         """
+        Accessor for the item_id attribute.
+
+        Returns:
+            int: Unique identifier for the library item.
+
         """
         return self.__item_id
 
     @property
     def title(self) -> str:
         """
-        Accessor for the title attribute
+        Accessor for the title attribute.
 
         Returns:
             str: The title of the library item.
@@ -73,10 +78,11 @@ class LibraryItem:
     @property
     def author(self) -> str:
         """
-        Accessor for the author attribute
+        Accessor for the author attribute.
 
         Returns:
             str: The author of the library item.
+
         """
         return self.__author
 
@@ -87,11 +93,17 @@ class LibraryItem:
 
         Returns:
             Genre: The gengre of the library item.
+
         """
         return self.__genre
 
     @property
     def is_borrowed(self) -> bool:
         """
+        Accessor for the is_borrow attribute.
+
+        Returns:
+           bool: If the library item borrowed is (true) or available (False).
+
         """
         return self.__is_borrowed
