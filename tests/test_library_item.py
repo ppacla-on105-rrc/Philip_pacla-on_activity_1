@@ -27,7 +27,7 @@ class TestLibraryItem(unittest.TestCase):
         self.assertEqual("Frank Herbert", item._LibraryItem__author)
         self.assertEqual(Genre.FICTION, item._LibraryItem__genre)
 
-    def test_init_blankk_title_raises_valueerror(self):
+    def test_init_blank_title_raises_valueerror(self):
         with self.assertRaises(ValueError):
             LibraryItem("", "Frank Herbert", Genre.FICTION)
 
