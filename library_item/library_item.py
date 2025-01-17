@@ -19,13 +19,17 @@ class LibraryItem:
         Initialize the class object with title, author, and genre.
 
         Args:
+            item_id (int): Id number to identify the library item.
             title (str): The title of the library item.
             author (str): The author of the library item.
             genre (Genre): The gengre of the library item.
+            is_borrowed (bool): If the library item borrowed is (true) 
+            or available (false).
 
         Raises:
-            ValueError: When the title or author is blank or if given an invalid
-            genre.
+            ValueError: If item_id is not an integer. When the title or author 
+            is blank or if given an invalid genre. When the is_borrowed is 
+            not a boolean.
 
         """
         if isinstance(item_id, int):
