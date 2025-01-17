@@ -71,4 +71,4 @@ class LibraryItem:
         Returns:
             Genre: The gengre of the library item.
         """
-        return self.genre
+        return self.__genre
